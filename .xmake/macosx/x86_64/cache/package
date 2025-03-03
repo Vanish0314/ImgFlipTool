@@ -1,0 +1,37 @@
+{
+    libjpeg = {
+        links = "jpeg",
+        linkdirs = "/usr/local/opt/jpeg-turbo/lib",
+        sysincludedirs = "/usr/local/opt/jpeg-turbo/include",
+        version = "3.1.0",
+        __requirestr = "libjpeg",
+        libfiles = "/usr/local/opt/jpeg-turbo/lib/libjpeg.a",
+        __enabled = true,
+        static = true
+    },
+    cimg = {
+        sysincludedirs = "/Users/vanish/.xmake/packages/c/cimg/v3.5.0/d2557a1a30b540dc97db10267dd61b33/include",
+        __enabled = true,
+        version = "v3.5.0",
+        installdir = "/Users/vanish/.xmake/packages/c/cimg/v3.5.0/d2557a1a30b540dc97db10267dd61b33",
+        license = "CeCILL-C",
+        __requirestr = "cimg",
+        syslinks = {
+            "m",
+            "pthread"
+        }
+    },
+    libpng = {
+        links = {
+            "png16",
+            "z"
+        },
+        linkdirs = "/usr/local/opt/libpng/lib",
+        sysincludedirs = "/usr/local/opt/libpng/include/libpng16",
+        version = "1.6.45",
+        __requirestr = "libpng",
+        libfiles = "/usr/local/opt/libpng/lib/libpng16.a",
+        __enabled = true,
+        static = true
+    }
+}
